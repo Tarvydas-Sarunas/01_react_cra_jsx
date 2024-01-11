@@ -1,38 +1,98 @@
-.App {
+/* Header ================= */
+
+.logo {
+  background-color: #fff;
+  padding: 10px;
+  font-weight: normal;
+}
+.logo span {
+  font-weight: bold;
+}
+
+/* nav */
+.mainNav {
+  background-color: #333;
+  color: #fff;
+}
+.navLink {
+  padding: 8px 16px;
+  display: inline-block;
+}
+.navLink:hover {
+  background-color: #797575;
+}
+
+/* band section ======================= */
+
+.bands-section {
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section__title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section__subtitle {
+  text-align: center;
+  color: lightgray;
+  font-style: italic;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.band-card {
+  height: 570px;
+  background-color: white;
+  color: black;
+}
+.card__img {
+  height: 300px;
+  width: 100%;
+}
+.card__info {
+  padding: 20px;
+  padding-bottom: 0;
+}
+.card__title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.card__date {
+  font-size: 20px;
+  color: gray;
+}
+.card__text {
+  font-size: 14px;
+  line-height: 30px;
+}
+.btn {
+  margin-left: 20px;
+  padding: 15px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.project__img {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  border: 1px solid rgb(252, 250, 250);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.project__title {
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+  padding: 5px 10px;
+}
+.unlisted {
+  list-style: none;
 }
